@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebebeb;
+    padding: 0;
+    font-size: 100%;
+    padding: 20px;
+    height: 120%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.back{
+    position: fixed;
+    left:25px;
+    top:10px;
+    font-size: 3em;
+}
+
+.flex{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#avatar{
+    height: 20em;
+    width: 20em;
+    align-self: center;
+    border-radius: 20em;
+}
+
+details {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    border-radius: 4px;
+    width: 17em;
+    cursor: pointer;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+summary {
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 0.5em;
+    text-align: center;
+    align-self: center;
+    width: calc(fit-content + 5px);
+}
+
+details[open] {
+    padding: 0.5em;
+    width: 17em;
+}
+
+details[open] summary {
+    margin-bottom: 0.5em;
+}
+
+.content{
+    margin-bottom:-10px;
+}
+
+.detail{
+    line-height: 30px;
+    margin-top:-5px;
+    margin-bottom: 5px;
+    text-align: center;
+    align-items: center;
+    background-color: #e9e9e9;
+    box-shadow: #aaaaaa 0px 0px 10px;
+}
+
+#pubgm[open]{
+    margin-bottom: 90px;
+}
+
+#pubgm > .detail{
+    position:absolute;
+    width:26em;
+    left: calc(50% - 13em);
+}
+
+#sport[open]{
+    margin-bottom: 100px;
+}
+
+#sport > .detail{
+    position:absolute;
+    margin-top:-5px;
+    width:26em;
+    left: calc(50% - 13em);
+}
+
+ul{
+    align-items: center;
+    align-self: center;
+    margin-left: -40px;
+    line-height: 25px;
+}
+
+li{
+    list-style: none;
+}
+
+@media (max-width: 768px){
+    #avatar{
+        height: 15em;
+        width: 15em;
+        align-self: center;
+        border-radius: 15em;
+    }
+}

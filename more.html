@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>更多 | HungryHenry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            height:50px;
+        }
+
+        .home-link {
+            margin-left: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 50px;
+        }
+
+        h1{
+            position: absolute;
+            left:calc(50% - 26px);
+        }
+
+
+        .container {
+            max-width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product {
+            width:200px;
+            height:fit-content;
+            float: center;
+            margin: 1%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product img {
+            border-radius: 30%;
+            width: 150px;
+            height: auto;
+        }
+
+        footer {
+            height: 50px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.php" class="home-link">&#x00AB</a>
+        <h1>更多</h1>
+    </header>
+    <div class="container">
+        <div class="product">
+            <a href="gts.php">
+                <img src="img/gtsico.png" alt="GTS">
+                <h3>GTS(开发中)</h3>
+                <p>听音乐猜歌名和歌手，挑战你的音乐记忆力</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="#">
+                <img src="product2.jpg" alt="音乐馆">
+                <h3>音乐馆</h3>
+                <p>在这里沉浸在无限制的音乐中</p>
+            </a>
+
+        </div>
+        <div class="product">
+            <a href="#">
+                <img src="product3.jpg" alt="产品3">
+                <h3>小游戏</h3>
+                <p>在浏览器中打开即玩的小游戏，方便快捷</p>
+            </a>
+        </div>
+        <div class="product">
+            <a href="#">
+                <img src="product3.jpg" alt="产品3">
+                <h3>文件库</h3>
+                <p>很多有帮助的文件</p>
+            </a>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 HungryHenry
+    </footer>
+</body>
+
+</html>
